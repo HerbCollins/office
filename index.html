@@ -9,6 +9,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="loaders.min.css" />
 	<style type="text/css">
 		html, body {
                 background-color: #fff;
@@ -60,6 +61,15 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .loader [data-loader=satellite]{
+                display: inline-block;
+                border: 1px solid #ccc;
+                margin-top: 50px;
+            }
+            [data-loader=satellite]:after, [data-loader=satellite]:before{
+                background-color:#ccc;
+            }
 	</style>
 </head>
 <body>
@@ -71,8 +81,8 @@
                 </div>
                 <div class="links">
                     <a href="http://www.lantinmaker.com">武汉兰亭梅客计算机有限公司</a>
-                
                 </div>
+                <div class="loader text-center"><span data-loader="satellite"></span></div>
             </div>
         </div>
 </body>
