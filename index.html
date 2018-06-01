@@ -9,15 +9,29 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="loaders.min.css" />
 	<style type="text/css">
 		html, body {
                 background-color: #fff;
-                color: #636b6f;
+                color: #000000;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;
+                background-image: url('./images/bg_0.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            .box-mark{
+                position: relative;
+                height: 100vh;
+                width:100%;
+                background-color: rgba(255 , 255 , 255 , 0.5);
             }
 
             .full-height {
@@ -49,7 +63,7 @@
             }
 
             .links > a , .links p {
-                color: #636b6f;
+                color: #000000;
                 padding: 0 25px;
                 font-size: 12px;
                 font-weight: 600;
@@ -64,26 +78,333 @@
 
             .loader [data-loader=satellite]{
                 display: inline-block;
-                border: 1px solid #ccc;
+                border: 1px solid #000000;
                 margin-top: 50px;
             }
             [data-loader=satellite]:after, [data-loader=satellite]:before{
-                background-color:#ccc;
+                background-color:#000000;
+            }
+
+            .navbar-default{
+                background-color: transparent;
+                border: 0px;
+                transform: background-color 1s;
+            }
+
+            .navbar-bg-in{
+                animation: navbar-bg-in 1s;
+                -moz-animation: navbar-bg-in 1s; /* Firefox */
+                -webkit-animation: navbar-bg-in 1s;  /* Safari 和 Chrome */
+                -o-animation: navbar-bg-in 1s;   /* Opera */
+                background-color: #ffffff;
+                box-shadow: 0px 0px 8px #000000;
+            }
+
+            .navbar-bg-out{
+                animation: navbar-bg-out 1s;
+                -moz-animation: navbar-bg-out 1s; /* Firefox */
+                -webkit-animation: navbar-bg-out 1s;  /* Safari 和 Chrome */
+                -o-animation: navbar-bg-out 1s;   /* Opera */
+                background-color: transparent;
+            }
+
+            .navbar-default .navbar-nav>li>a , .navbar-default .navbar-nav>li>span{
+                display: inline-block;
+                color:#000000;
+                border-bottom: 2px solid transparent;
+                padding:18px 30px ;
+            }
+
+            .navbar-default .navbar-nav>li>span >a{
+                display: inline-block;
+                padding:0px 8px;
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .navbar-default .navbar-nav>li>span >a.active{
+                font-weight: bold;
+            }
+
+            .navbar-default .navbar-brand{
+                color:#000000;
+                padding:18px 30px ;
+            }
+
+            .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+                color:#000000;
+                background-color: transparent;
+                border-color:#000000;
+            }
+            .navbar-default .navbar-nav>li>a.phone-link{
+                padding:10px;
+            }
+            .phone-link span{
+                display: inline-block;
+                padding: 8px 20px;
+                background-color: #000000;
+                color:#ffffff;
+                border-radius: 20px;
+                font-family: 'microsoft Yahei'
+            }
+
+            section.panel{
+                border-radius: 0px;
+                margin:0px;
+            }
+
+            section#section_1{
+                width:100%;
+                background-image: url('./images/bg_1.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                background-size: cover;
+                padding:18px;
+            }
+
+            footer{
+                background-color: #000000;
+                padding: 50px 20px;
+                color: #ffffff;
+            }
+
+            footer a{
+                color:#999;
+                text-decoration: none;
+            }
+
+            footer a:hover{
+                text-decoration: none;
+                color:#ffffff;
+            }
+
+            footer .fa-inverse{
+                color:#000000;
+            }
+
+            @keyframes navbar-bg-in{
+                from {background: transparent;}
+                to {background: #ffffff;}
+            }
+            
+            @-moz-keyframes navbar-bg-in{
+                from {background: transparent;}
+                to {background: #ffffff;}
+            }
+            
+            @-webkit-keyframes navbar-bg-in{
+                from {background: transparent;}
+                to {background: #ffffff;}
+            }
+            
+            @-o-keyframes navbar-bg-in{
+                from {background: transparent;}
+                to {background: #ffffff;}
+            }
+
+            @keyframes navbar-bg-out{
+                from {background: #ffffff ;}
+                to {background:transparent;}
+            }
+            
+            @-moz-keyframes navbar-bg-out{
+                from {background: #ffffff ;}
+                to {background:transparent;}
+            }
+            
+            @-webkit-keyframes navbar-bg-out{
+                from {background: #ffffff ;}
+                to {background:transparent;}
+            }
+            
+            @-o-keyframes navbar-bg-out{
+                from {background: #ffffff ;}
+                to {background:transparent;}
             }
 	</style>
 </head>
 <body>
-	<div class="flex-center position-ref full-height">
-            
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">兰亭梅客</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="#">关于</a></li>
+        <li><a href="#">服务</a></li>
+        <li><a href="#">合作</a></li>
+        <li><a href="#">联系</a></li>
+        <li><a href="#">新闻</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <span>
+                <a href="" class="active">简</a> | <a href="">EN</a> | <a href="">日本語</a>
+            </span>
+        </li>
+        <li>
+            <a href="#" class="phone-link">
+                <span>
+                    <i class="fa fa-fw fa-phone-square"></i> 400-700-8888
+                </span>
+            </a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+       <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title m-b-md">
                     lantinmaker
                 </div>
-                <div class="links">
-                    <a href="http://www.lantinmaker.com">武汉兰亭梅客计算机有限公司</a>
-                </div>
-                <div class="loader text-center"><span data-loader="satellite"></span></div>
             </div>
         </div>
+        
+        <section class="panel" id="section_0">
+            <div class="panel-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1>Build unstoppable applications</h1>
+                            <p>Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third-party interference.</p>
+                            <p>These apps run on a custom built blockchain, an enormously powerful shared global infrastructure that can move value around and represent the ownership of property.</p>
+                            <p>This enables developers to create markets, store registries of debts or promises, move funds in accordance with instructions given long in the past (like a will or a futures contract) and many other things that have not been invented yet, all without a middleman or counterparty risk.</p>
+                            <p>The project was bootstrapped via an ether presale in August 2014 by fans all around the world. It is developed by the Ethereum Foundation, a Swiss non-profit, with contributions from great minds across the globe.</p>
+                            <p>On traditional server architectures, every application has to set up its own servers that run their own code in isolated silos, making sharing of data hard. If a single app is compromised or goes offline, many users and other apps are affected.</p>
+                            <p>On a blockchain, anyone can set up a node that replicates the necessary data for all nodes to reach an agreement and be compensated by users and app developers. This allows user data to remain private and apps to be decentralized like the Internet was supposed to work.</p>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="section_1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <h1>Build unstoppable applications</h1>
+                                <p>Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third-party interference.</p>
+                                <p>These apps run on a custom built blockchain, an enormously powerful shared global infrastructure that can move value around and represent the ownership of property.</p>
+                                <p>This enables developers to create markets, store registries of debts or promises, move funds in accordance with instructions given long in the past (like a will or a futures contract) and many other things that have not been invented yet, all without a middleman or counterparty risk.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <h1>Build unstoppable applications</h1>
+                                <p>Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third-party interference.</p>
+                                <p>These apps run on a custom built blockchain, an enormously powerful shared global infrastructure that can move value around and represent the ownership of property.</p>
+                                <p>This enables developers to create markets, store registries of debts or promises, move funds in accordance with instructions given long in the past (like a will or a futures contract) and many other things that have not been invented yet, all without a middleman or counterparty risk.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <h1>Build unstoppable applications</h1>
+                                <p>Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third-party interference.</p>
+                                <p>These apps run on a custom built blockchain, an enormously powerful shared global infrastructure that can move value around and represent the ownership of property.</p>
+                                <p>This enables developers to create markets, store registries of debts or promises, move funds in accordance with instructions given long in the past (like a will or a futures contract) and many other things that have not been invented yet, all without a middleman or counterparty risk.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p><a href="">武汉兰亭梅客计算机有限公司</a></p>
+                        </div>
+                        <div class="col-md-4">
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <p> 
+                                <a href="">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-qq fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            </p>
+                            <p>
+                                <i class="fa fa-fw fa-map-marker"></i>
+                                湖北省武汉市江岸区石桥一路18号 黄浦创立方10栋
+                            </p>
+                            <p>
+                                <i class="fa fa-fw fa-envelope"></i>
+                                <b>bd@lantinmaker.com</b>
+                            </p>
+                            <p>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <i class="fa fa-fw fa-phone-square"></i> 
+                                        <b>400-700-8888</b>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <i class="fa fa-fw fa-phone-square"></i> 
+                                        <b>400-700-8888</b>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).ready(function(){
+            $(window).scroll(function(){
+                if($(window).scrollTop() > 0){
+                    $(".navbar-default").removeClass('navbar-bg-out').addClass('navbar-bg-in'); // 开始淡入
+                } else{
+                    $(".navbar-default").removeClass('navbar-bg-in').addClass('navbar-bg-out'); // 开始淡出
+                }
+
+            });
+        });
+    </script>
 </body>
 </html>
