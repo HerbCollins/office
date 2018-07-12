@@ -12,219 +12,9 @@
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="loaders.min.css" />
-	<style type="text/css">
-		html, body {
-                background-color: #fff;
-                color: #000000;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-                background-image: url('./images/bg_0.jpg');
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-attachment: fixed;
-                background-size: cover;
-            }
-
-            .box-mark{
-                position: relative;
-                height: 100vh;
-                width:100%;
-                background-color: rgba(255 , 255 , 255 , 0.5);
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a , .links p {
-                color: #000000;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-
-            .loader [data-loader=satellite]{
-                display: inline-block;
-                border: 1px solid #000000;
-                margin-top: 50px;
-            }
-            [data-loader=satellite]:after, [data-loader=satellite]:before{
-                background-color:#000000;
-            }
-
-            .navbar-default{
-                background-color: rgba(255 , 255 , 255 , 0.4);
-                border: 0px;
-                transform: background-color 1s;
-            }
-
-            .navbar-bg-in{
-                animation: navbar-bg-in 1s;
-                -moz-animation: navbar-bg-in 1s; /* Firefox */
-                -webkit-animation: navbar-bg-in 1s;  /* Safari 和 Chrome */
-                -o-animation: navbar-bg-in 1s;   /* Opera */
-                background-color: #ffffff;
-                box-shadow: 0px 0px 8px #000000;
-            }
-
-            .navbar-bg-out{
-                animation: navbar-bg-out 1s;
-                -moz-animation: navbar-bg-out 1s; /* Firefox */
-                -webkit-animation: navbar-bg-out 1s;  /* Safari 和 Chrome */
-                -o-animation: navbar-bg-out 1s;   /* Opera */
-                background-color: rgba(255 , 255 , 255 , 0.4);
-            }
-
-            .navbar-default .navbar-nav>li>a , .navbar-default .navbar-nav>li>span{
-                display: inline-block;
-                color:#000000;
-                border-bottom: 2px solid transparent;
-                padding:18px 30px ;
-            }
-
-            .navbar-default .navbar-nav>li>span >a{
-                display: inline-block;
-                padding:0px 8px;
-                color: #000000;
-                text-decoration: none;
-            }
-
-            .navbar-default .navbar-nav>li>span >a.active{
-                font-weight: bold;
-            }
-
-            .navbar-default .navbar-brand{
-                color:#000000;
-                padding:18px 30px ;
-            }
-
-            .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-                color:#000000;
-                background-color: transparent;
-                border-color:#000000;
-            }
-            .navbar-default .navbar-nav>li>a.phone-link{
-                padding:10px;
-            }
-            .phone-link span{
-                display: inline-block;
-                padding: 8px 20px;
-                background-color: #000000;
-                color:#ffffff;
-                border-radius: 20px;
-                font-family: 'microsoft Yahei'
-            }
-            section{
-                padding: 80px 20px;
-            }
-            section.panel{
-                border-radius: 0px;
-                margin:0px;
-            }
-
-            section#section_1{
-                width:100%;
-                background-image: url('./images/bg_1.jpg');
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-attachment: fixed;
-                background-size: cover;
-            }
-
-            .footer{
-                background-color: #000000;
-                color: #ffffff;
-            }
-
-            .footer a{
-                color:#999;
-                text-decoration: none;
-            }
-
-            .footer a:hover{
-                text-decoration: none;
-                color:#ffffff;
-            }
-
-            .footer .fa-inverse{
-                color:#000000;
-            }
-
-            @keyframes navbar-bg-in{
-                from { background-color: rgba(255 , 255 , 255 , 0.4);}
-                to {background: #ffffff;}
-            }
-            
-            @-moz-keyframes navbar-bg-in{
-                from {background-color: rgba(255 , 255 , 255 , 0.4);}
-                to {background: #ffffff;}
-            }
-            
-            @-webkit-keyframes navbar-bg-in{
-                from {background-color: rgba(255 , 255 , 255 , 0.4);}
-                to {background: #ffffff;}
-            }
-            
-            @-o-keyframes navbar-bg-in{
-                from {background-color: rgba(255 , 255 , 255 , 0.4);}
-                to {background: #ffffff;}
-            }
-
-            @keyframes navbar-bg-out{
-                from {background: #ffffff ;}
-                to {background-color: rgba(255 , 255 , 255 , 0.4);}
-            }
-            
-            @-moz-keyframes navbar-bg-out{
-                from {background: #ffffff ;}
-                to {background-color: rgba(255 , 255 , 255 , 0.4);}
-            }
-            
-            @-webkit-keyframes navbar-bg-out{
-                from {background: #ffffff ;}
-                to {background-color: rgba(255 , 255 , 255 , 0.4);}
-            }
-            
-            @-o-keyframes navbar-bg-out{
-                from {background: #ffffff ;}
-                to {background-color: rgba(255 , 255 , 255 , 0.4);}
-            }
-	</style>
+	<link rel="stylesheet" type="text/css" href="style/common.css" />
 </head>
-<body>
+<body class="home-page">
     <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -235,18 +25,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">兰亭梅客</a>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" style="width: 106px;"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">首页</a></li>
-        <li><a href="#">关于</a></li>
-        <li><a href="#">服务</a></li>
+        <li><a href="">LantinCMS</a></li>
+        <li><a href="#">UUBS</a></li>
+        <li><a href="#">C4D印客</a></li>
         <li><a href="#">合作</a></li>
         <li><a href="#">联系</a></li>
-        <li><a href="#">新闻</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -331,6 +121,34 @@
                 </div>
             </div>
         </section>
+        <section class="panel">
+            <div class="panel-body">
+                <div class="container">
+                    <div class="text-center">
+                        <h1>战略合作</h1>
+                        <hr>
+                    </div>   
+                    <div class="text-center">
+                        <h2>中国</h2>
+                    </div> 
+                    <div class="row">
+                        <div class="col-md-3">
+                            华东交通大学继续教育学院
+                        </div>
+                        <div class="col-md-3">
+                            华东交通大学信息工程学院
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h2>英国</h2>
+                    </div> 
+                    <div class="text-center">
+                        <h2>日本</h2>
+                    </div>    
+                </div>
+                
+            </div>
+        </section>
         <section class="footer">
                 <div class="container">
                     <div class="row">
@@ -394,12 +212,21 @@
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(window).ready(function(){
+
             $(window).scroll(function(){
                 if($(window).scrollTop() > 0){
                     $(".navbar-default").removeClass('navbar-bg-out').addClass('navbar-bg-in'); // 开始淡入
                 } else{
                     $(".navbar-default").removeClass('navbar-bg-in').addClass('navbar-bg-out'); // 开始淡出
                 }
+
+                if($(window).scrollTop() <= $('.title').offset().top){
+                    _title_top = $('.title').offset().top - $(window).scrollTop();
+                    console.log($('.title').css('font-size'));
+                    _font_size = 84 - ( ( $('.title').offset().top - _title_top ) / $('.title').offset().top ) * ( 84 - 56 ); 
+                    $('.title').css("font-size" , _font_size + 'px');
+                }
+                
 
             });
         });
